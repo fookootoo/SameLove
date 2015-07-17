@@ -1,0 +1,13 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.1"
+  },
+  "dependencies": {
+    "angularjs-toaster": "~0.4.15",
+    "angular-re-captcha": "~0.2.0",
+    "angular-recaptcha": "~2.2.4",
+    "angular-cache": "~4.3.2"
+  }
+}

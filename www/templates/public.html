@@ -1,0 +1,15 @@
+<ion-view view-title="Public" name="dashboard-view">
+    <ion-content class="padding">
+
+        <div class="list"  ng-repeat="user in users">
+
+            <a class="item item-avatar" href="#/main/public/{{user.ID}}">
+                <img src="http://manage.hunter.bosshr.com/images/{{user.codeLogo}}">
+                <h2>{{user.nickName}}</h2>
+                <p>{{user.userSpeciality}}</p>
+            </a>
+
+
+        </div>
+    </ion-content>
+</ion-view>
