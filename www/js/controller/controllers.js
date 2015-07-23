@@ -39,7 +39,7 @@ angular.module('starter.controllers',[])
         };
     })
     .controller('DashCtrl', function($scope, $state, $http, $ionicPopup, AuthService,API_URL) {
-        $scope.logout = function() {
+        /*$scope.logout = function() {
             AuthService.logout();
             $state.go('login');
         };
@@ -73,7 +73,15 @@ angular.module('starter.controllers',[])
                 }, function(err) {
                     $scope.response = err;
                 });
-        };
+        };*/
+
+        //alert('here');
+        var iframeWidth = 'width:' + document.body.clientWidth + 'px;';
+        var iframeHeight = 'height:' + (document.body.scrollHeight - (ionic.Platform.isIOS()? 60 : 45)) + 'px;';
+        $scope.iframeStyle = iframeHeight + iframeWidth + 'margin-bottom: 0;';
+        $scope.mapDivStyle=iframeHeight + 'margin-bottom: 0;';
+        $scope.mapCampus = 'templates/map/demoMap.html';
+
     })
     .controller('PlayerCtrl',
     ['$scope','Playlist', '$routeParams', '$document', 'Media', '$window', 'Async',
